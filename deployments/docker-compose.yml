@@ -1,0 +1,9 @@
+version: "1"
+services:
+  app:
+    container_name: app
+    build:
+      context: ../
+      dockerfile: deployments/app/DockerFie
+    ports:
+      - "-5000:5000"
